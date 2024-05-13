@@ -3,7 +3,7 @@
         "target": "es2019",                                 
         "module": "commonjs",     
         "moduleResolution": "node",
-        "rootDir": "src",       
+        "rootDir": "",       
         "typeRoots": [
         "./src/@types",
         "./nome_modules/@types"
