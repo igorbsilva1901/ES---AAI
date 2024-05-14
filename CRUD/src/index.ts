@@ -1,6 +1,6 @@
 import express, { urlencoded } from "express";
 import routes from "./Routes/routes";
-import testRoute from "./Routes/welcomeRoute";
+import testRoute from "./Routes/testRoute";
 import cors from "cors";
 
 const app = express();
