@@ -1,0 +1,23 @@
+.forms {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.185);
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.forms button {
+    width: 10vw;
+    margin-top: 1vh;
+}
+
+.forms input {
+    margin-top: .5vh;
+    height: 3vh;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.212);
+    font-size: medium;
+}
