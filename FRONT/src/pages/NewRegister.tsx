@@ -13,7 +13,6 @@ function NewRegister() {
         address: '',
         reference_point: ''
     });
-
     async function send(){
         try {
             await axios.post("http://localhost:3000/register", {
