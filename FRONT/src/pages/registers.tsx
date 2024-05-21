@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Register from '../../model/registerModel';
+import '../themes/oldregisters.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
 
@@ -27,13 +28,14 @@ function Registers() {
     }
 
   return (
-    <div>
+    <div className='registersect'>
         <h1>Registros</h1>
         <table>
           <th>NOME</th>
           <th>PROBLEMA</th>
           <th>ENDEREÇO</th>
           <th>PONTO DE REFERÊNCIA</th>
+          <th>AÇÕES</th>
           {registers.map((register:Register) => (
             <tr>
               <td>{register.username}</td>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../themes/newregister.css'
+import '../App.css'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -30,7 +31,8 @@ function NewRegister() {
     }
 
   return (
-    <div className='forms'>
+      <div className='forms'>
+        <h1>Novo Registro</h1>
         <input type="text" id="username" name='username' placeholder='Nome' onChange={(e)=>{setRegister({...register, [e.target.name]: e.target.value})}}/>
         <input type="text" id="problem" name='problem' placeholder='Problema' onChange={(e)=>{setRegister({...register, [e.target.name]: e.target.value})}}/>
         <input type="text" id="address" name='address' placeholder='Endereço' onChange={(e)=>{setRegister({...register, [e.target.name]: e.target.value})}}/>

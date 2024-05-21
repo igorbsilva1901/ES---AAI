@@ -7,9 +7,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    background-color: #fff;
 }
 
 .homesect button {
     width: 10vw;
     margin-top: 1vh;
+    background-color: rgba(138, 202, 255, 0.514);
+}
+
+body {
+    background: rgb(138,203,255);
+    background: linear-gradient(163deg, rgba(138,203,255,1) 0%, rgba(255,255,255,1) 100%);
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import '../themes/home.css'
 import { useNavigate } from 'react-router-dom'
 
