@@ -23,9 +23,11 @@ routes.put('/register/:uuid', async (req: Request<{uuid: string}>, res: Response
         const { uuid } = req.params;
         const { username, problem, address, reference_point } = req.body;
 
-        const updatedRegister = await registerRepository.updateRegister(uuid, { username, problem, address, reference_point });
+        await registerRepository.updateRegister(uuid, { username, problem, address, reference_point });
 
-        if (!updatedRegister) {
+        const updatedRegister = await registerRepository.getRegisterById(uuid);
+
+        if (updatedRegister === null) {
             return res.status(404).json({ error: 'Registro não encontrado' });
         }
 
@@ -33,9 +35,7 @@ routes.put('/register/:uuid', async (req: Request<{uuid: string}>, res: Response
     } catch (error) {
         res.status(500).json({ error: 'Erro ao atualizar registro' });
     }
-    
 });
-
 
 routes.delete('/register/:uuid', async (req: Request<{uuid: string}>, res: Response) => {
     try {
