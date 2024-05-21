@@ -29,3 +29,6 @@ Descrição: Atualiza um relato de problema existente.
 Deletar (Delete)
 Endpoint: DELETE /register/:uuid
 Descrição: Deleta um relato de problema existente.
+
+Após Implementação do CRUD Seguiremos para construção de login e usuário para que venha pode realizar tais notificações. 
+ 
